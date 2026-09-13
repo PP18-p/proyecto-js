@@ -114,82 +114,117 @@ main {
 }
 
 #Mis_habilidades {
-    display: grid;
-    grid-template-columns: 230px 1fr;
-    column-gap: 45px;
-    align-items: center;
-    background-color: white;
     padding: 30px 40px;
     margin-bottom: 30px;
 }
 
 #Mis_habilidades h3 {
-    grid-column: 1 / -1;
     text-align: center;
     font-size: 2em;
     margin-bottom: 35px;
 }
 
-#Mis_habilidades {
-    text-align: center;
-    padding: 20px 40px;
-}
-
-.habilidad {
+#Mis_habilidades .habilidad {  
+    justify-content: space-around;
+    border: 2px solid #ddd;
+    border-radius: 10px;
     width: 100%;
-    max-width: 250px;
-    margin: 0 auto 35px;
-    text-align: center;
+    max-width: 350px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding: 30px;
+    transition: 0.3s;
 }
 
-.habilidad p {
-    margin-bottom: 12px;
-    font-weight: bold;
+#Mis_habilidades .habilidad:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-.barra {
-    width: 100%;
-    height: 12px;
-    background-color: #dce9d7;
+#Mis_habilidades .habilidad p {
+    display: inline-block;
+    margin-right: 200px;
+    margin: 0 auto 20px;
+}
+
+#Mis_habilidades .habilidad p:last-child {
+    margin-left: auto;
+}
+
+#Mis_habilidades .barra {
+    background-color: #ddd;
     border-radius: 20px;
     overflow: hidden;
+    height: 12px;
 }
 
-.progreso {
-    height: 100%;
-    border-radius: 20px;
-    background: linear-gradient(90deg, #1f5c32, #60dd1d);
+#progreso_html,
+#progreso_css,
+#progreso_javascript,
+#progreso_python,
+#progreso_git,
+#progreso_deploy {
+  height: 100%;
+  background: #23a525;
+  border-radius: 20px;
 }
 
-.progreso.html {
-    width: 82%;
+#progreso_html {
+  width: 87%;
 }
 
-.progreso.css {
-    width: 46%;
+#progreso_css {
+  width: 60%;
 }
 
-.progreso.javascript {
-    width: 34%;
+#progreso_javascript {
+  width: 45%;
 }
 
-.progreso.python {
-    width: 25%;
+#progreso_python {
+  width: 23%;
 }
 
-.progreso.git {
-    width: 76%;
+#progreso_git {
+  width: 75%;
 }
 
-.progreso.deploy {
-    width: 10%;
+#progreso_deploy {
+  width: 15%;
 }
 
-.habilidad {
-    margin-bottom: 25px;
+#Mis_proyectos {
+    grid-template-columns: 230px 1fr;
+    column-gap: 45px;
+    align-items: center;
+    background-color: white;
+    padding: 70px 50px;
+    margin-bottom: 30px;
+    border-radius: 30px;
 }
 
-.habilidad p {
-    margin-bottom: 8px;
-    font-weight: bold;
+#Mis_proyectos h3 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 35px;
 }
+
+#Mis_proyectos .proyecto {
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    max-width: 350px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    transition: 0.3s;
+    width: 300px;
+    min-height: 260px;
+    padding: 35px;
+    box-sizing: border-box;
+
+}
+
+#Mis_proyectos .proyecto:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
